@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage:{
         "banner-desk":"url('/dist/img/cinet-banner-desktop.svg')"
       },
+   
     },
   },
   plugins: [],
