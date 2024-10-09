@@ -769,6 +769,8 @@ video {
 
 @media (min-width: 1024px) {
   .header ul.header_nav li.nav:hover ul.header_sub {
+    height: -moz-fit-content;
+    height: fit-content;
     --tw-translate-y: 1.25rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     opacity: 1;
@@ -889,6 +891,7 @@ video {
 @media (min-width: 1024px) {
   .header ul.header_sub {
     position: absolute;
+    height: 0px;
     max-height: 50rem;
     width: 15rem;
     --tw-translate-y: 5rem;
