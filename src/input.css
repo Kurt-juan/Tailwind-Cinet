@@ -102,11 +102,11 @@
 
 .banner{
     @apply h-[98vh]  bg-primary relative
-  md:h-[80vh] lg:h-[90vh] md:bg-light md:bg-banner-desk md:bg-cover md:bg-no-repeat md:bg-center
+  md:h-[80vh] lg:h-[90vh] md:bg-light md:bg-banner-desk md:bg-cover md:bg-no-repeat md:bg-center;
 }
 .banner .tns-nav{
-    @apply translate-y-[5300%] flex justify-center gap-10
-    md:translate-y-[3500%] lg:translate-y-[4500%]
+    @apply translate-y-[4700%] flex justify-center gap-10
+    md:translate-y-[3500%] lg:translate-y-[4200%];
 }
 .banner .tns-nav button{
     @apply bg-gray-600 p-2 rounded-full hover:bg-accent;
@@ -115,10 +115,10 @@
     @apply bg-accent;
 }
 .banner .tns-controls{
-    @apply lg:translate-y-[600%] lg:flex lg:justify-between lg:absolute lg:left-0 lg:w-[90%] lg:translate-x-[5%] lg:z-[100] 
+    @apply lg:translate-y-[600%] lg:flex lg:justify-between lg:absolute lg:left-0 lg:w-[90%] lg:translate-x-[5%] lg:z-[100] ;
 }
 .banner .tns-controls button{
-    @apply 2xl:bg-light 2xl:shadow-[0_10px_30px_#2b2b2b] 2xl:px-5 2xl:py-3 2xl:rounded-full lg:mx-10
+    @apply 2xl:bg-light 2xl:shadow-[0_10px_30px_#2b2b2b] 2xl:px-5 2xl:py-3 2xl:rounded-full lg:mx-10;
 }
 .banner .banner_item{
 @apply px-16 md:px-4 md:!inline-grid md:!grid-cols-2 md:gap-[10rem] md:items-center lg:items-center;
@@ -127,39 +127,79 @@
     @apply w-[20rem] mx-auto mb-10 md:order-2 lg:w-[30rem];
 }
 .banner .banner_item h4{
-    @apply text-center
+    @apply text-center;
 }
 .banner .banner_item h4 span{
-    @apply text-light text-xs font-semibold px-2
+    @apply text-light text-xs font-semibold px-2;
 }
 .banner .banner_item h4 span:nth-child(2){
-    @apply border-r-2 border-l-2
+    @apply border-r-2 border-l-2;
 }
 
 .banner .banner_item h1{
     @apply text-[2.3rem] text-light font-bold text-center my-4
-    lg:text-7xl 
+    lg:text-7xl ;
 }
 .banner .banner_item p{
     @apply text-light text-center mb-4;
 }
 .banner .banner_item .banner_btn{
-    @apply py-5 
+    @apply py-5 ;
 }
 .banner .banner_item .banner_btn a {
     @apply flex items-center gap-2 relative w-fit mx-auto px-5
     before:content-[''] before:w-14 before:h-14 before:bg-accent before:block before:rounded-full
-    before:absolute before:-left-1 before:transition-all hover:before:w-full hover:before:transition-all 
+    before:absolute before:-left-1 before:transition-all hover:before:w-full hover:before:transition-all ;;
 }
 .banner .banner_item .banner_btn a span{
-   @apply text-light font-semibold relative
+   @apply text-light font-semibold relative;
 }
 .banner .banner_item .banner_btn a i{
-    @apply text-light text-[.5rem] opacity-0 relative transition-all
+    @apply text-light text-[.5rem] opacity-0 relative transition-all;
 }
 .banner .banner_item .banner_btn a:hover i{
-@apply opacity-100 transition-all
+@apply opacity-100 transition-all;
+}
+}
+
+/* PROMO */
+
+.promo_feature{
+    @apply text-center
+}
+.promo_feature h1{
+    @apply text-[2rem] font-semibold text-primary
+}
+.promo_feature p{
+    @apply text-[1.1rem] font-light
+}
+.promo_item{
+    @apply px-16
+}
+.promo_text{
+    @apply absolute translate-y-[-5rem] mx-0 text-light px-6 font-semibold
+}
+.promo_text h3{
+    @apply text-[1.3rem]
+    mb-3
+
+}
+.promo_text p{
+    @apply text-[.8rem] 
+}
+.promo_text p i{
+    @apply text-[.8rem] mr-2
 
 }
 
+/* .promo_item img{
+    @apply w-full;
+} */
+
+.promo .tns-controls{
+    @apply translate-y-[350%] flex justify-between absolute left-0 w-[100%] z-[100] ;
 }
+.promo .tns-controls button{
+    @apply shadow-[0_10px_30px_#2b2b2b] px-5 py-3 ;
+}
+

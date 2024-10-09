@@ -104,6 +104,70 @@
             </div>
         </div>
     </section>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo_wrapper">
+                
+                <div class="promo_feature">
+                    <h1>Popular Movies</h1>
+                    <p>Here are some of the most popular movies that our users & viewers enjoy.</p>
+                </div>
+
+                <div class="promo_slider">
+
+                <div class="promo_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Disconnected</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i><span>2021, DRAMA</span></p>
+                </div>
+                
+            </div>
+    
+               <div class="promo_item">
+                   <img src="/dist/img/paradigm.jpg" alt="">
+               <div class="promo_text">
+                    <h3>Paradigm Lost</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i></i><span>2021, DOCUMENTRAY , SPORT</span></p>
+                </div>
+                <div class="promo_info">
+                    <h3><i></i><span></span></h3>
+                 </div>
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/alita.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Alita: Battle Angel</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i>2021, ACTION</span></p>
+                </div>
+                
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/black mirror.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Black Mirror</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i> <span>2021, SCI-FI</span></p>
+                </div>
+                
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/euphoria.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Euphoria</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i><span>2021, DRAMA</span></p>
+                </div>
+                
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="/dist/js/toggle_menu.js"></script>
     <script src="/dist/js/headerDropDown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -124,5 +188,24 @@
       }
         });
         </script>
+
+    <script type="module">
+    // import {tns} from './src/tiny-slider.js';
+  
+    var slider = tns({
+      container: '.promo_slider',
+      slideBy: 'page',
+      items: 1,
+      autoplay: false,
+      controlsText:['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+      responsive:{
+        1536:{
+           items:3
+      }
+    }
+    });
+
+
+    </script>
 </body>
 </html>

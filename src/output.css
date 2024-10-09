@@ -989,7 +989,7 @@ video {
 
 .banner .tns-nav {
   display: flex;
-  --tw-translate-y: 5300%;
+  --tw-translate-y: 4700%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   justify-content: center;
   gap: 2.5rem;
@@ -1004,7 +1004,7 @@ video {
 
 @media (min-width: 1024px) {
   .banner .tns-nav {
-    --tw-translate-y: 4500%;
+    --tw-translate-y: 4200%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
@@ -1227,8 +1227,84 @@ video {
   padding: 0.5rem;
 }
 
+/* PROMO */
+
+.promo_feature {
+  text-align: center;
+}
+
+.promo_feature h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 94 127 / var(--tw-text-opacity));
+}
+
+.promo_feature p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.promo_item {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.promo_text {
+  position: absolute;
+  margin-left: 0px;
+  margin-right: 0px;
+  --tw-translate-y: -5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.promo_text h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.promo_text p {
+  font-size: .8rem;
+}
+
+.promo_text p i {
+  margin-right: 0.5rem;
+  font-size: .8rem;
+}
+
+/* .promo_item img{
+    @apply w-full;
+} */
+
+.promo .tns-controls {
+  position: absolute;
+  left: 0px;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  --tw-translate-y: 350%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  justify-content: space-between;
+}
+
+.promo .tns-controls button {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-shadow: 0 10px 30px #2b2b2b;
+  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 @media (min-width: 768px) {
   .md\:pt-\[10rem\] {
     padding-top: 10rem;
   }
 }
+
