@@ -163,21 +163,23 @@
 }
 
 /* PROMO */
-
+.promo{
+    @apply relative
+}
 .promo_feature{
     @apply text-center
 }
 .promo_feature h1{
-    @apply text-[2rem] font-semibold text-primary
+    @apply text-[2rem] font-semibold text-primary mt-4
 }
 .promo_feature p{
-    @apply text-[1.1rem] font-light
+    @apply text-[1.1rem] font-light mt-4
 }
 .promo_item{
-    @apply px-16
+    @apply  px-[3rem] md:px-0 lg:px-0 relative mt-4 mb-[7em]
 }
 .promo_text{
-    @apply absolute translate-y-[-5rem] mx-0 text-light px-6 font-semibold
+    @apply absolute translate-y-[-5rem] translate-x-[2rem] mx-0 text-light px-8 font-semibold
 }
 .promo_text h3{
     @apply text-[1.3rem]
@@ -192,14 +194,127 @@
 
 }
 
-/* .promo_item img{
-    @apply w-full;
-} */
+.promo_item img{
+    @apply mx-auto w-[23rem] h-[25rem];
+}
 
 .promo .tns-controls{
-    @apply translate-y-[350%] flex justify-between absolute left-0 w-[100%] z-[100] ;
+    @apply translate-y-[390%] translate-x-[2%] flex justify-between absolute left-0 w-[96%] z-[100]
+    lg:translate-y-[390%] lg:translate-x-[23%] lg:w-[68.5%];  
 }
 .promo .tns-controls button{
-    @apply shadow-[0_10px_30px_#2b2b2b] px-5 py-3 ;
+    @apply shadow-[0_10px_30px_#2b2b2b] px-[1.1rem] py-[.8rem] lg:shadow-none;
+}
+
+/* CATEGORIES */
+
+.categories {
+    @apply bg-primary px-16 
+}
+.categories_wrapper{
+    @apply lg:grid lg:grid-cols-2 lg:mt-20 lg:mb-20
+}
+.categories_details{
+    @apply lg:order-2 lg:px-[8.5rem] lg:mt-[10rem]
+}
+.categories_details h1{
+    @apply text-[2rem] font-semibold text-light max-w-16 mt-7 
+    lg:text-[2.8rem] lg:font-bold 
+}
+.categories_details p{
+    @apply text-[1.2rem]  text-light mt-6 mb-6 
+    lg:text-[1.2rem]
+}
+.categories_details a{
+    @apply text-[.8rem] font-semibold text-light mb-6
+}
+.categories .categories_pics{
+    @apply grid  grid-cols-1 gap-6
+    md:grid md:grid-cols-2 md:gap-6
+}
+.categories_pics h1{
+    @apply text-[1.5rem] text-light
+}
+.categories .categories_pics .categories_cards#cat-1{
+    @apply h-[200px] bg-cat-1 bg-cover bg-no-repeat
+}
+.categories .categories_pics .categories_cards#cat-2{
+    @apply h-[200px] bg-cat-2 bg-cover bg-no-repeat
+}
+.categories .categories_pics .categories_cards#cat-3{
+    @apply h-[200px] bg-cat-3 bg-cover bg-no-repeat
+}
+.categories .categories_pics .categories_cards#cat-4{
+    @apply h-[200px] bg-cat-4 bg-cover bg-no-repeat
+}
+.categories .categories_pics .categories_cards#cat-5{
+    @apply h-[200px] bg-cat-5 bg-cover bg-no-repeat
+}
+
+
+/* NEWS */
+
+.news{
+    @apply bg-primary 
+}
+.news_proxy{
+    @apply md:grid md:grid-cols-2 md:mt-[2rem] lg:grid lg:grid-cols-4 lg:mb-[5rem] 
+}
+.news_feature{
+    @apply text-center
+}
+.news_feature h1{
+    @apply text-[1.5rem] font-semibold text-light mt-[2rem] md:text-[2rem] lg:mt-[5rem]  lg:mb-[5rem] lg:text-[2.5rem]
+}
+
+.news_item{
+    @apply  px-[2rem] md:px-0 lg:px-0 relative mb-[7rem] 
+}
+.news_item:hover .news_text{
+    @apply translate-y-[-5rem] transition-all
+}
+.news_text{
+    @apply absolute translate-y-[-3rem] translate-x-[1.5rem] mx-0 bg-light font-semibold text-[.9rem] max-w-[20rem] px-[1rem] h-[7rem] rounded-[.3rem] md:max-w-[15rem] md:translate-x-[4rem] md:h-[8rem]  lg:translate-x-[1.8rem] lg:pl-[1.5rem] lg:pr-[4rem] lg:h-[10rem] 
+}
+.news_text h3{
+    @apply text-[1.2rem] text-primary
+    mt-3
+    mb-3 
+
+
+}
+.news_item img{
+    @apply mx-auto w-[40rem] h-[16rem] rounded-[.3rem] md:w-[18rem] lg:w-[16.5rem] 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@layer utilities{
+    .btn{
+        @apply inline-block bg-light py-[1rem] px-[2rem] text-center rounded-[5rem] border-[1px] border-solid border-transparent transition-all;
+    }
+    .btn.bg--accent{
+        @apply bg-accent
+        hover:bg-gray-500
+    }
 }
 

@@ -163,10 +163,137 @@
                 
             </div>
         </div>
+
+                <div class="promo_feature">
+                    <h1>New releases</h1>
+                    <p>Check out the highly rated TV shows, available at Cinet.</p>
+                </div>
+
+                <div class="promo_sliders">
+
+                <div class="promo_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Disconnected</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i><span>2021, DRAMA</span></p>
+                </div>
+                
+            </div>
+    
+               <div class="promo_item">
+                   <img src="/dist/img/paradigm.jpg" alt="">
+               <div class="promo_text">
+                    <h3>Paradigm Lost</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i></i><span>2021, DOCUMENTRAY , SPORT</span></p>
+                </div>
+                <div class="promo_info">
+                    <h3><i></i><span></span></h3>
+                 </div>
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/alita.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Alita: Battle Angel</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i>2021, ACTION</span></p>
+                </div>
+                
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/black mirror.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Black Mirror</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i> <span>2021, SCI-FI</span></p>
+                </div>
+                
+            </div>
+
+                <div class="promo_item">
+                    <img src="/dist/img/euphoria.jpg" alt="">
+                <div class="promo_text">
+                    <h3>Euphoria</h3>
+                    <p><i class="fa-solid fa-calendar-day"></i><span>2021, DRAMA</span></p>
+                </div>
+                
+            </div>
+        </div>
             </div>
         </div>
     </section>
 
+    <!-- <section class="categories">
+        <div class="container">
+            <div class="categories_wrapper">
+                <div class="categories_details">
+                    <h1>Popular Categories</h1>
+                    <p>All content at Cinet is divided into several categories. It helps you to easily navigate between them and find what you like.</p>
+                    <a href="" class="btn bg--accent">VIEW ALL</a>
+                </div>
+                <div class="categories_pics">
+                    <div class="categories_cards"id="cat-1"> 
+                        <h1>Dramas</h1>
+                    </div>
+                    <div class="categories_cards"id="cat-2">
+                        <h1>Cartoons</h1> </div>
+                    <div class="categories_cards"id="cat-3"> 
+                        <h1>Horror</h1>
+                    </div>
+                    <div class="categories_cards"id="cat-4"> 
+                        <h1>Sci-Fi & Fantasy</h1>
+                    </div>
+                    <div class="categories_cards"id="cat-5">
+                        <h1>Comedy</h1> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="news">
+        <div class="container">
+            <div class="news_wrapper">
+                
+                <div class="news_feature">
+                    <h1>News</h1>
+                </div>
+                <div class="news_proxy">
+                <div class="news_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="news_text">
+                    <h3>Top 10 Movies to Watch This Summer</h3>
+                    <p>September 12, 2021</p>
+                </div>
+            </div>
+             
+                <div class="news_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="news_text">
+                    <h3>TV Shows & Movies About Superheroes</h3>
+                    <p>September 13, 2021</p>
+                </div>
+            </div>
+             
+                <div class="news_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="news_text">
+                    <h3>Unknown Locations from Popular Movies</h3>
+                    <p>September 14, 2021</p>
+                </div>
+            </div>
+             
+                <div class="news_item">
+                <img src="/dist/img/disconnected.jpg" alt="">
+                <div class="news_text">
+                    <h3>Top 5 Popular Movie Stars to Watch for in 2021</h3>
+                    <p>September 15, 2021</p>
+                </div>
+            </div>
+        </div>
+                
+            </div>
+            </div>
+        </section>
 
     <script src="/dist/js/toggle_menu.js"></script>
     <script src="/dist/js/headerDropDown.js"></script>
@@ -184,7 +311,9 @@
         1536:{
             controlsText:['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
             
+            
         }
+   
       }
         });
         </script>
@@ -193,19 +322,44 @@
     // import {tns} from './src/tiny-slider.js';
   
     var slider = tns({
-      container: '.promo_slider',
+      container: '.promo_sliders',
       slideBy: 'page',
       items: 1,
       autoplay: false,
       controlsText:['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
       responsive:{
-        1536:{
+        1024:{
            items:3
+      },
+        768:{
+           items:2
       }
+      
     }
     });
-
-
     </script>
+      <script type="module">
+        // import {tns} from './src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.promo_slider',
+          slideBy: 'page',
+          items: 1,
+          autoplay: false,
+          controlsText:['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+          responsive:{
+            1024:{
+               items:3
+          },
+            768:{
+               items:2
+          }
+        }
+        });
+    
+    
+        </script>
+
+        
 </body>
 </html>
