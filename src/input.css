@@ -268,27 +268,118 @@
 }
 
 .news_item{
-    @apply  px-[2rem] md:px-0 lg:px-0 relative mb-[7rem] 
+    @apply  px-[2rem] md:px-0 lg:px-0 relative mb-[7rem] lg:h-[20rem]
 }
 .news_item:hover .news_text{
-    @apply translate-y-[-5rem] transition-all
+    @apply lg:translate-y-[14rem] 
 }
 .news_text{
-    @apply absolute translate-y-[-3rem] translate-x-[1.5rem] mx-0 bg-light font-semibold text-[.9rem] max-w-[20rem] px-[1rem] h-[7rem] rounded-[.3rem] md:max-w-[15rem] md:translate-x-[4rem] md:h-[8rem]  lg:translate-x-[1.8rem] lg:pl-[1.5rem] lg:pr-[4rem] lg:h-[10rem] 
+    @apply absolute translate-y-[-3rem] translate-x-[1.5rem] mx-0 bg-light font-semibold text-[.9rem] max-w-[20rem] px-[1rem] h-[7rem] rounded-[.3rem] md:max-w-[15rem] md:translate-x-[4rem] md:h-[8rem] lg:pl-[1.5rem] lg:pr-[4rem] lg:h-[10rem] lg:translate-y-[15rem]  lg:translate-x-[.9rem]
 }
 .news_text h3{
     @apply text-[1.2rem] text-primary
     mt-3
-    mb-3 
-
-
+    mb-1.5 
 }
+.news_text p{
+    @apply lg:text-[.9rem] text-gray-500;
+}
+
+
 .news_item img{
-    @apply mx-auto w-[40rem] h-[16rem] rounded-[.3rem] md:w-[18rem] lg:w-[16.5rem] 
+    @apply mx-auto w-[40rem] h-[16rem] rounded-[.3rem] md:w-[18rem] lg:w-[16.5rem]  lg:absolute  lg:translate-y-[3rem]
+}
+
+.news_item:hover img{
+ @apply lg:translate-y-[3.5rem] lg:transition-all
+}
+
+/* APPLICATION */
+
+.app_anchors{
+    @apply flex gap-[2rem]
+}
+.app_anchors a{
+  @apply flex items-center gap-4 mb-[4rem]
+}
+
+.app_anchors a:first-child i{
+@apply text-[1.4rem] text-light  
+}
+
+.app_anchors a:last-child i{
+    @apply text-[2rem] text-light
+    }
+
+.app_logo_details{
+    @apply flex flex-col text-light items-start
+}
+
+.app_logo_details h3{
+    @apply text-[.6rem] 
+}
+
+.app_logo_details h4{
+    @apply text-[1.1rem]
+}
+
+.app_item h2{
+    @apply text-primary text-[1.2rem]
+}
+.app_item h1{
+    @apply  text-primary text-[1.8rem] font-semibold mb-2 mt-2
+}
+.app_item p{
+    @apply text-[1.2rem] mb-[3rem]
+}
+
+.app_wrapper{
+    @apply lg:flex lg:flex-row
 }
 
 
+/* FOOTER */
 
+.footer{
+    @apply bg-accent 
+}
+
+.footer_card{
+    @apply text-light py-3 
+}
+.footer_card h1{
+    @apply text-[1.3rem] py-2
+}
+.footer_item {
+    @apply grid grid-cols-2 gap-[]
+}
+.footer_item ul li{
+    @apply py-1
+}
+
+
+.footer_last{
+    @apply flex flex-col items-center text-light
+}
+.footer_last img{
+    @apply w-[7.5rem] mb-5 
+}
+.footer_last p{
+    @apply mb-5  
+}
+.footer_content{
+    @apply flex flex-row gap-4 text-[1.2rem] mb-8 lg:mr-[8rem]
+}
+.footer_list{
+    @apply lg:grid lg:grid-cols-3 lg:justify-between mb-[7rem] mt-[5rem] lg:gap-[5rem]
+}
+
+.footer_last{
+    @apply lg:flex lg:flex-row lg:justify-between lg:items-center mb-[10rem] lg:mr-[2rem]
+}
+.footer_last img{
+    @apply lg:order-[-1]
+}
 
 
 
@@ -310,11 +401,17 @@
 
 @layer utilities{
     .btn{
-        @apply inline-block bg-light py-[1rem] px-[2rem] text-center rounded-[5rem] border-[1px] border-solid border-transparent transition-all;
+        @apply inline-block bg-light  text-center rounded-[5rem] border-[1px] border-solid border-transparent transition-all;
     }
     .btn.bg--accent{
-        @apply bg-accent
+        @apply bg-accent py-[1rem] px-[2rem]
         hover:bg-gray-500
     }
 }
+    .btn.bg--dark{
+        @apply bg-dark w-[10rem] py-1 px-3
+    }
 
+    .btn.bg--transparent{
+        @apply bg-transparent border-light py-2 px-[1rem]
+    }
